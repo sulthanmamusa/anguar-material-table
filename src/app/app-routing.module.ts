@@ -32,7 +32,9 @@ const routes: Routes = [
     component: EditCasesComponent,
     data: { title: 'Edit Cases' }
   },
-  { path: '',
+  { path: 'users', loadChildren: () => import('./users/users.module').then(m => m.UsersModule) },
+  {
+    path: '',
     redirectTo: '/cases',
     pathMatch: 'full'
   }

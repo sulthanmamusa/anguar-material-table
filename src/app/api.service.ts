@@ -74,4 +74,12 @@ export class ApiService {
       catchError(this.handleError<Statistic>(`getStatistic status=${status}`))
     );
   }
+
+  getMenus(): Observable<any> {
+    const url = `http://localhost:4200/Antripx/supervision/common/service/MenuList`;
+    return this.http.post<any>(url,{}).pipe(
+      tap(_ => console.log(`fetched statistic status=${status}`)),
+      catchError(this.handleError<any>(`getStatistic status=${status}`))
+    );
+  }
 }

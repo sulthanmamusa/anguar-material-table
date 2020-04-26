@@ -1,0 +1,11 @@
+{
+    "/Antripx/*": {
+      "target": "https://travelsoho.com",
+      "secure": false,
+      "pathRewrite": {
+        "^/Antripx": "Antripx"
+      },
+      "logLevel": "debug",
+      "changeOrigin": true
+    }
+  }

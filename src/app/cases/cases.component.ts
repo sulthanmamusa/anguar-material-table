@@ -16,6 +16,8 @@ export class CasesComponent implements OnInit {
   constructor(private api: ApiService) { }
 
   ngOnInit(): void {
+
+    this.api.getMenus().subscribe(console.log);
     this.api.getCases()
     .subscribe((res: any) => {
       this.data = res;

@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "studentId": 1,
+      "studentNumber": 1,
+      "firstName": "sulthan",
+      "lastName": "mamusa"
+    },
+    {
+      "id": 2,
+      "studentId": 2,
+      "studentNumber": 2,
+      "firstName": "abc",
+      "lastName": "a"
+    },
+    {
+      "id": 3,
+      "studentId": 3,
+      "studentNumber": 3,
+      "firstName": "def",
+      "lastName": "a"
+    }
+  ]
+}
